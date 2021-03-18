@@ -68,3 +68,7 @@ ul,li {
 .main-room-content {
   font-size: 50px;
 }
+
+.room-lists {
+  list-style: none;
+}
