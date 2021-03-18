@@ -11,7 +11,7 @@
       <ul class='room-lists'>
         <% @rooms.each do |room| %>
           <li class='room-list'>
-            <%= link_to '', method: :get do %>
+            <%= link_to room_messages_path(room.id), method: :get do %>
               <%= room.title %>
             <% end %>
           </li>
