@@ -48,9 +48,11 @@ ul,li {
 }
 
 .main-header {
-  background-color: aqua;
+  background-color: #66CCFF	;
   width: calc(100vw - 200px);
   height: 10vh;
+  display: flex;
+  Justify-content: space-between
 }
 
 .main-header-content {
@@ -67,4 +69,15 @@ ul,li {
 
 .main-room-content {
   font-size: 50px;
+}
+
+.room-lists {
+  list-style: none;
+}
+
+.lists-right {
+  font-size: 15px;
+  margin-top: 10px;
+  margin-right: 40px;
+  list-style: none;
 }
