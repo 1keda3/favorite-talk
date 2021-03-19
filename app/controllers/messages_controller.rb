@@ -9,13 +9,13 @@ class MessagesController < ApplicationController
     @room = Room.find(params[:room_id])
     @message = @room.messages.new(message_params)
     if @message.save
-      redirect_to root_path
+      redirect_to room_messages_path(@room)
     end
   end
 
   private
   
   def message_params
-    params.permit(:content)
+    params.require(:message).permit(:content, :image)
   end
 end
