@@ -48,7 +48,7 @@ ul,li {
 }
 
 .main-header {
-  background-color: aqua;
+  background-color: #66CCFF	;
   width: calc(100vw - 200px);
   height: 10vh;
 }
