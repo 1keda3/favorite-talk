@@ -1,0 +1,15 @@
+<div class="tag_index">
+  <%= "タグ一覧" %>
+  <%= "SF" %>
+  <%= "アクション" %>
+  <%= "学園" %>
+</div>
+
+<div class="tag-create">
+  <%= form_with model: @tag, url: room_tags_path, local: true do |f|%>
+      <div class='tag-create-form'>
+        <%= f.text_area :tag_name, class: "tag-name", id: "tag-id", placeholder:"タグを入力" %>
+        <%= f.submit "作成", class: 'tag-form-send-action' %>
+      </div>
+  <% end %>
+</div>

@@ -71,8 +71,8 @@ ul,li {
   font-size: 50px;
 }
 
-.room-lists {
-  list-style: none;
+.room-list {
+  margin-left: 50px;
 }
 
 .lists-right {
