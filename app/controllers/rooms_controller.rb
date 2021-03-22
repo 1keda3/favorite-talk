@@ -22,3 +22,4 @@ class RoomsController < ApplicationController
     params.require(:room).permit(:title)
   end
 end
+
