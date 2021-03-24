@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :rooms, only: [:index, :create, :new] do
     resources :messages, only: [:index, :create, :new]
   end
+  resources :genres, only: [:index]
 end

@@ -1,0 +1,16 @@
+<div class="tag-room">
+  <div class="tag-content">
+    <ul class='tag-room-lists'>
+      <% @rooms.each do |room| %>
+        <% if room.genre_id == room.genre.id %>
+          <li class='tag-list'>
+            <%= link_to room_messages_path(room.id), method: :get do %>
+              <%= room.title %>
+            <% end %>
+            <%= room.genre.name %>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+</div>

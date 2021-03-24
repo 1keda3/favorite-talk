@@ -10,20 +10,29 @@
 
    <div class="side-bottom">
      <div class="side-bottom-content">
-      <ul class="genre-lists">
-       <li class="genre-lists">ジャンル</li>
-       <li class="genre-lists">アクション</li>
-       <li class="genre-lists">学園</li>
+      <ul class='room-lists'>
+        <li class="list"> <%=link_to 'バトル', genres_path %> </li>
+        <li class="list"> <%=link_to 'ファンタジー', genres_path %> </li>
+        <li class="list"> <%=link_to 'SF', genres_path %> </li>
+        <li class="list"> <%=link_to '恋愛', genres_path %> </li>
+        <li class="list"> <%=link_to '青春', genres_path %> </li>
+        <li class="list"> <%=link_to 'ホラー', genres_path %> </li>
+        <li class="list"> <%=link_to 'グルメ', genres_path %> </li>
+        <li class="list"> <%=link_to 'ギャグ', genres_path %> </li>
+        <li class="list"> <%=link_to '日常', genres_path %> </li>
+        <li class="list"> <%=link_to 'スポーツ', genres_path %> </li>
+        <li class="list"> <%=link_to 'BL', genres_path %> </li>
+        <li class="list"> <%=link_to 'GL', genres_path %> </li>
+        <li class="list"> <%=link_to '成人', genres_path %> </li>
+        <li class="list"> <%=link_to 'その他', genres_path %> </li>
+        </li>
       </ul>
      </div>
      
-     <%#= link_to "Tag一覧", root_path %>
+     <%#= link_to "Tag一覧", genres_path %>
 
      <% if @room.present? %>
-      <%= @room.title%>
-     <% end %>
-     <% if @room.present? %>
-      <%#= @room.tags%>
+       <%= @room.title%>
      <% end %>
    </div>
 </div>
