@@ -1,7 +1,7 @@
 class Tag < ApplicationRecord
-  has_many :room_tags
+  has_many :room_tags, foreign_key: 'tag_id'
   has_many :rooms, through: :room_tags
 
-  validates :tag_name, uniqueness: true
+  validates :name, uniqueness: true
   
 end

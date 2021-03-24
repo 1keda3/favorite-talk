@@ -1,7 +1,10 @@
 <div class="chat-room">
 
-  <%= render "tags/new" %>
-
+  <div class="tag">
+    <%= render partial: 'tag', collection: @tags %>
+    <%= tag.name%>
+  </div>
+  
   <div class="messages">
     <%= render partial: 'message', collection: @messages %>
   </div>

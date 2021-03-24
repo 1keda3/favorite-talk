@@ -16,5 +16,14 @@
        <li class="genre-lists">学園</li>
       </ul>
      </div>
+     
+     <%#= link_to "Tag一覧", root_path %>
+
+     <% if @room.present? %>
+      <%= @room.title%>
+     <% end %>
+     <% if @room.present? %>
+      <%#= @room.tags%>
+     <% end %>
    </div>
 </div>

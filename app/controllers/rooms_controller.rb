@@ -6,13 +6,14 @@ class RoomsController < ApplicationController
   end
 
   def new
-    @room = Room.new
+    @room = RoomsTagForm.new
   end
 
   def create
-    @room = Room.new(room_params)
-    if @room.save
-      redirect_to root_path
+    @room = RoomsTagForm.new(room_params)
+    if @room.valid?
+      @room.save
+      return redirect_to root_path
     else
       render :new
     end
@@ -21,6 +22,6 @@ class RoomsController < ApplicationController
   private
   
   def room_params
-    params.require(:room).permit(:title)
+    params.require(:rooms_tag_form).permit(:title, :name)
   end
 end
