@@ -1,0 +1,17 @@
+<div class="side-bottom">
+  <div class="side-bottom-content">
+    <div class="side-describe">
+      <%= "最新5件のルーム"%>
+    </div>
+    <% @latest.each do |room| %>
+      <ul class='side-room-lists'>
+          <li><%= link_to room_messages_path(room.id), method: :get do %></li>
+            <%= room.title %>
+          <% end %>
+          <%room.tags.each do |tag| %>
+            #<%=tag.name%>
+          <%end%>
+      </ul>
+    <% end %>
+  </div>
+</div>

@@ -4,10 +4,11 @@
 
 | Column             | Type   | Options     |
 | ------------------ | ------ | ----------- |
-| name               | string | null: false |
+| nickname           | string | null: false |
 | email              | string | null: false |
 | password           | string | null: false |
 | encrypted_password | string | null: false |
+| profile            | text   |             |
 
 ### Association
 
@@ -18,27 +19,26 @@
 
 | Column      | Type       | Options           |
 | ----------- | ---------- | ----------------- |
-| name        | string     | null: false       |
-| room_tag_id | references | foreign_key: true |
+| title       | string     | null: false       |
 
 ### Association
 
 - belongs_to :user
-- has_many :tags, through: room_tags
+- has_many :tags, through: room_tag_relations
 - has_many :room_tags
 - has_many :messages
 
-## room_tags テーブル
+## room_tag_relations テーブル
 
-| Column    | Type       | Options                        |
-| --------- | ---------- | ------------------------------ |
-| tag_id    | references | null: false, foreign_key: true |
-| room_id   | references | null: false, foreign_key: true |
+| Column    | Type       | Options           |
+| --------- | ---------- | ----------------- |
+| tag_id    | references | foreign_key: true |
+| room_id   | references | foreign_key: true |
 
 ### Association
 
 - belongs_to :room
-- belongs_to :tags
+- belongs_to :tag
 
 ## messages テーブル
 
@@ -55,11 +55,11 @@
 
 ## tags テーブル
 
-| Column   | Type       | Options     |
-| -------- | ---------- | ----------- |
-| tag_name | string     | null: false |
+| Column | Type       | Options     |
+| ------ | ---------- | ----------- |
+| name   | string     | null: false |
 
 ### Association
 
-- has_many :rooms, through: room_tags
-- has_many :room_tags
+- has_many :rooms, through: room_tag_relations
+- has_many :room_tag_relations

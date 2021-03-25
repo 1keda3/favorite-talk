@@ -4,7 +4,9 @@ class MessagesController < ApplicationController
   def index
     @message = Message.new
     @room = Room.find(params[:room_id])
+    @rooms = Room.all.order('created_at DESC')
     @messages = @room.messages.includes(:user)
+    @latest = Room.last(5)
   end
 
   def create

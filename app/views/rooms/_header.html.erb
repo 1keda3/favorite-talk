@@ -1,10 +1,23 @@
-<div class="main" >
+<div class='header'>
+  <div class='side_bar'>
+    <div class="side-header">
+      <div class="side-header-top">
+        <%= link_to "TOP", root_path %>
+      </div>
+      <div class="side-header-create">
+        <%= link_to "Room作成", new_room_path %>
+      </div>
+    </div>
+  </div>
+
   <div class="main-header">
     <div class="main-header-content">
-      <% if @room.blank? %>
+      <% if @room.present? %>
+        <%= @room.title %>
+      <% elsif @user.nil?%>
         <%= "新着ルーム一覧" %>
       <% else %>
-        <%= @room.title %>
+        <%= "ユーザー情報" %>
       <% end %>
     </div>
     <div class="user-connection">

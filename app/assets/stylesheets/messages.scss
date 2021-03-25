@@ -7,14 +7,6 @@
   display: none;
 }
 
-.template {
-  display: flex;
-}
-
-.messages-room {
-  display: flex;
-}
-
 .message {
   border: 1px solid #808080;
   margin-bottom: 10px;
@@ -34,5 +26,35 @@
 }
 
 .message-content {
-  margin-left: 5px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.message-bottom {
+  display: flex;
+}
+
+.side-room-lists {
+  margin-left: 10px;
+}
+
+.message-side-bar {
+  width: 200px;
+}
+
+.side-describe {
+  padding: 10px 20px 0 20px;
+}
+
+.chat-room {
+  margin: 0 20px;
+}
+
+.message-image {
+  padding: 0 20px;
+}
+
+.message-name {
+  width: 40vw;
+  height: 20vh;
 }
