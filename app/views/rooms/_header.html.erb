@@ -1,16 +1,29 @@
-<div class="main" >
+<div class='header'>
+  <div class='side_bar'>
+    <div class="side-header">
+      <div class="side-header-top">
+        <%= link_to "TOP", root_path %>
+      </div>
+      <div class="side-header-create">
+        <%= link_to "Room作成", new_room_path %>
+      </div>
+    </div>
+  </div>
+
   <div class="main-header">
     <div class="main-header-content">
-      <% if @room.blank? %>
-        <%= "新着ページ一覧" %>
-      <% else %>
+      <% if @room.present? %>
         <%= @room.title %>
+      <% elsif @user.nil?%>
+        <%= "新着ルーム一覧" %>
+      <% else %>
+        <%= "ユーザー情報" %>
       <% end %>
     </div>
     <div class="user-connection">
       <ul class='lists-right'>
         <% if user_signed_in? %>
-          <li><%= link_to current_user.name, root_path, class: "user-name" %></li>
+          <li><%= link_to current_user.nickname, user_path(current_user.id), class: "user-name" %></li>
           <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
        <% else %>
           <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>

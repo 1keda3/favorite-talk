@@ -1,10 +1,13 @@
 <div class="messages-room">
-  <%= render "rooms/side_bar" %>
-
-  <div class="message-left">
-    <div class="main-header">
-      <%= render "rooms/main_header" %>
+  <div class= "header">
+    <%= render'rooms/header'%>
+  </div>
+  <div class="message-bottom">
+    <div class="message-side-bar">
+      <%= render"side_bar"%>
     </div>
-    <%= render "main_chat" %>
+    <div class="message-main">
+      <%= render "main_chat" %>
+    </div>
   </div>
 </div>

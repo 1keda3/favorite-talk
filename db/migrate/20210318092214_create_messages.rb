@@ -3,7 +3,6 @@ class CreateMessages < ActiveRecord::Migration[6.0]
     create_table :messages do |t|
       t.string :content
       t.references :room, foreign_key: true
-
       t.timestamps
     end
   end

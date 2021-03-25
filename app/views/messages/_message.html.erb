@@ -1,5 +1,8 @@
 <div class="message">
   <div class="upper-message">
+    <div class="message-user">
+      <%= link_to message.user.nickname, user_path(message.user.id), class: "user-name" %>
+    </div>
     <div class="message-date">
       <!-- 投稿した時刻を出力する -->
       <%= l message.created_at %>
