@@ -1,9 +1,8 @@
 class Room < ApplicationRecord
   has_many :messages, dependent: :destroy
+  has_many :room_tag_relations
+  has_many :tags, through: :room_tag_relations
 
   validates :title, presence: true
-  validates :genre_id, numericality: { other_than: 1 } 
 
-  extend ActiveHash::Associations::ActiveRecordExtensions
-  belongs_to :genre
 end
