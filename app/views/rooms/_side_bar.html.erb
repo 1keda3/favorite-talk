@@ -1,7 +1,7 @@
 <div class="side-bar">
    <div class="side-header">
      <div class="side-header-top">
-       <%= link_to "TOP", root_path %>
+       <%= "TOP" %>
      </div>
      <div class="side-header-create">
        <%= link_to "Room作成", new_room_path %>
@@ -10,14 +10,11 @@
 
    <div class="side-bottom">
      <div class="side-bottom-content">
-      <ul class='room-lists'>
-
+      <ul class="genre-lists">
+       <li class="genre-lists">ジャンル</li>
+       <li class="genre-lists">アクション</li>
+       <li class="genre-lists">学園</li>
+      </ul>
      </div>
-     
-     <%#= link_to "Tag一覧", tags_index_path %>
-
-     <% if @room.present? %>
-       <%= @room.title%>
-     <% end %>
    </div>
 </div>

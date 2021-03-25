@@ -68,11 +68,11 @@ ul,li {
 }
 
 .main-room-content {
-  font-size: 35px;
+  font-size: 50px;
 }
 
-.room-list {
-  margin-left: 50px;
+.room-lists {
+  list-style: none;
 }
 
 .lists-right {
