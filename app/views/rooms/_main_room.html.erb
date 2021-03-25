@@ -3,15 +3,13 @@
 
   <div class="main-room">
     <div class="main-room-content">
+      <%= "部屋一覧" %>
       <ul class='room-lists'>
         <% @rooms.each do |room| %>
           <li class='room-list'>
             <%= link_to room_messages_path(room.id), method: :get do %>
               <%= room.title %>
             <% end %>
-            <%room.tags.each do |tag| %>
-              #<%=tag.name%>
-            <%end%>
           </li>
         <% end %>
       </ul>
