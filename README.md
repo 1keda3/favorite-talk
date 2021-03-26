@@ -113,3 +113,6 @@ favorite-talk
 ### ユースケース
 ・ルーム作成ページのタグフォームを入力するとタグが作成される
 ・TOPページのルーム名の隣にタグ名が表示される
+
+# 実装した機能についてのGIFと説明
+![099fcc2b76535217f936314dfa3dd8cd](https://user-images.githubusercontent.com/78196968/112567949-0ee8bd00-8e25-11eb-8dbc-cfd9e697f55d.gif)
