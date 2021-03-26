@@ -115,4 +115,26 @@ favorite-talk
 ・TOPページのルーム名の隣にタグ名が表示される
 
 # 実装した機能についてのGIFと説明
+## チャットルームの作成
+ヘッダーの「Room作成」をクリック
+→タイトル、タグを入力し「作成」ボタンクリック
+→作成したRoomがトップページに表示される
 ![099fcc2b76535217f936314dfa3dd8cd](https://user-images.githubusercontent.com/78196968/112567949-0ee8bd00-8e25-11eb-8dbc-cfd9e697f55d.gif)
+
+## チャット機能
+チャット画面に入る
+→文章または画像を入力
+→「送信」ボタンをクリック
+→チャット画面に表示される
+![f2c66cee61c386ac8a6dae5e287bd8e7](https://user-images.githubusercontent.com/78196968/112568186-69821900-8e25-11eb-9b0b-e7dc7d7a574b.gif)
+
+## ユーザー情報
+ユーザー名をクリック
+→ユーザー情報が表示
+自分の情報なら編集ボタンが表示される
+→ボタンをクリック
+→ユーザー情報の編集が可能
+![e6451c3aeffa38b548d1f8bdb79f1863](https://user-images.githubusercontent.com/78196968/112568231-7868cb80-8e25-11eb-9f1c-ed94eb107c96.gif)
+
+
+
