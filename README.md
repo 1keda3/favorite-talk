@@ -137,5 +137,9 @@ favorite-talk
 →ユーザー情報の編集が可能
 ![e6451c3aeffa38b548d1f8bdb79f1863](https://user-images.githubusercontent.com/78196968/112568231-7868cb80-8e25-11eb-9f1c-ed94eb107c96.gif)
 
+# 実装予定の機能
+指定したタグが紐付いているルームを表示するタグ検索機能を実装予定です。
 
+# データベース設計
+<img width="632" alt="favoriteER" src="https://user-images.githubusercontent.com/78196968/112569515-a64f0f80-8e27-11eb-93c7-59ca628b9faf.png">
 
