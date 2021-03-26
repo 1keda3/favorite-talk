@@ -1,16 +1,28 @@
-<div class='chat-room-create'>
-  <%= form_with model: @room, url: rooms_path, local: true do |f|%>
-    <div class='room-create-form'>
-      <%= f.label :title, "タイトル" %><br />
-      <%= f.text_area :title, class: "room-name", id: "room-name-id", placeholder:"ルーム名" %>
-    </div>
-    <div class='tag-create-form'>
-      <%= f.label :name, "タグ" %><br />
-      <%= f.text_area :name, class: "tag-name", id: "tag-name-id", placeholder:"タグ名" %>
-    </div>
-    <div class='room-create-form-send'>
-      <%= f.submit "作成", class: 'room-create-form-send-action' %>
-    </div>
-  <% end %>
 
+<div class="messages-room">
+  <div class= "header">
+    <%= render'rooms/header'%>
+  </div>
+  <div class="message-bottom">
+    <div class="message-side-bar">
+      <%= render"messages/side_bar"%>
+    </div>
+    <div class="message-main">
+      <div class='chat-room-create'>
+        <%= form_with model: @room, url: rooms_path, local: true do |f|%>
+          <div class='room-create-form'>
+            <%= f.label :title, "タイトル" %><br />
+            <%= f.text_area :title, class: "room-name", id: "room-name-id", placeholder:"ルーム名" %>
+          </div>
+          <div class='tag-create-form'>
+            <%= f.label :name, "タグ" %><br />
+            <%= f.text_area :name, class: "tag-name", id: "tag-name-id", placeholder:"タグ名" %>
+          </div>
+          <div class='room-create-form-send'>
+            <%= f.submit "作成", class: 'room-create-form-send-action' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
