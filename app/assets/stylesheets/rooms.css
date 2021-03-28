@@ -14,9 +14,6 @@ ul,li {
   margin: 0;
 }
 
-.wrapper {
-}
-
 .side-header {
   background-color: aqua;
   width: 200px;
@@ -83,4 +80,9 @@ ul,li {
 
 .header {
   display: flex;
+}
+
+.chat-room-create {
+  margin-left: 20px;
+  margin-top: 20px;
 }
