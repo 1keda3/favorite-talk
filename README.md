@@ -148,5 +148,5 @@ password: aaa111
 指定したタグが紐付いているルームを表示するという、タグ検索機能を実装予定です。
 
 # データベース設計
-<img width="632" alt="favoriteER" src="https://user-images.githubusercontent.com/78196968/112569515-a64f0f80-8e27-11eb-93c7-59ca628b9faf.png">
+<img width="640" alt="FavoriteTalkER" src="https://user-images.githubusercontent.com/78196968/112747605-6b003c80-8ff1-11eb-86f7-4f869da8722c.png">
 
