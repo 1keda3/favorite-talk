@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   root to: "rooms#index"
   resources :rooms, only: [:index, :create, :new] do
     resources :messages, only: [:index, :create, :new]
+  end
+  resources :tags, only: [:index, :new, :create] do
     collection do
       get 'search'
     end
