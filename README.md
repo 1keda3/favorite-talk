@@ -73,6 +73,7 @@ favorite-talk
 
 # URL
 https://favorite-talk.herokuapp.com/
+
 Herokuでデプロイしているため、Herokuの仕様により本番環境にアクセス頂いた際に画像リンクが切れている可能性がございます。
 
 # テスト用アカウント
