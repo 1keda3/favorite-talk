@@ -1,5 +1,16 @@
-<div class="contents row">
-  <% @rooms.each do |room| %>
-    <%= render partial: "room", locals: { room: room } %>
-  <% end %>
+<div class="room-search">
+  <div class= "header">
+    <%= render'header'%>
+  </div>
+
+  <div class="room-index">
+    <div class="message-side-bar">
+      <%= render"messages/side_bar"%>
+    </div>
+    <div class="search-room">
+      <% @rooms.each do |room| %>
+        <%= render partial: "room", locals: { room: room } %>
+      <% end %>
+    </div>
+  </div>
 </div>

@@ -1,5 +1,16 @@
-<div class="contents row">
-  <% @tags.each do |tag| %>
-    <%= render partial: "tag", locals: { tag: tag } %>
-  <% end %>
+<div class="room-search">
+  <div class= "header">
+    <%= render'rooms/header'%>
+  </div>
+
+  <div class="room-index">
+    <div class="message-side-bar">
+      <%= render"messages/side_bar"%>
+    </div>
+    <div class="tag-search">
+      <% @tags.each do |tag| %>
+        <%= render partial: "tag", locals: { tag: tag } %>
+      <% end %>
+    </div>
+  </div>
 </div>

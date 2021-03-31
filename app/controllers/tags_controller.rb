@@ -1,5 +1,6 @@
 class TagsController < ApplicationController
   before_action :word_definition, only: [:index, :show]
+  before_action :latest_room
 
   def index
     @tags = Tag.all
@@ -31,4 +32,8 @@ class TagsController < ApplicationController
     @room = RoomsTag.new
   end
 
+  def latest_room
+    @latest = Room.last(5)
+  end
+  
 end

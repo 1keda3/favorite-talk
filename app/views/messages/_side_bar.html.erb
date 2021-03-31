@@ -1,5 +1,5 @@
 <div class="side-bottom">
-  <%= form_with(url: search_tags_path, local: true, method: :get, class: "search-form") do |form| %>
+  <%= form_with(url: search_tags_path, local: true, method: :get, class: "search-tag-form") do |form| %>
     <%= form.text_field :keyword, placeholder: "タグを検索する", class: "search-input" %>
     <%= form.submit "検索", class: "search-btn" %>
   <% end %> 
@@ -14,7 +14,9 @@
             <%= room.title %>
           <% end %>
           <%room.tags.each do |tag| %>
-            #<%=tag.name%>
+            <%= link_to tag_path(tag.id), method: :get, class:"tag-link" do %>
+              #<%=tag.name%>
+            <% end %>
           <%end%>
       </ul>
     <% end %>

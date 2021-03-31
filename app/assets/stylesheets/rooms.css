@@ -16,6 +16,7 @@ ul,li {
 
 .room-index{
   display: flex;
+  width: calc(100vw - 200px);
 }
 
 .side-header {
@@ -63,8 +64,9 @@ ul,li {
 
 .main-room {
   background-color: #C0C0C0;
-  width: 100vw;
+  width: calc(100vw - 200px);
   height: calc(100vh - 10vh);
+  overflow: scroll;
 }
 
 .main-room-content {
@@ -89,4 +91,24 @@ ul,li {
 .chat-room-create {
   margin-left: 20px;
   margin-top: 20px;
+}
+
+.search-room {
+  font-size: 35px;
+}
+
+.room-search {
+  background-color: #C0C0C0;
+}
+
+.search-room-form {
+  font-size: 35px;
+}
+
+.search-tag-form {
+  display: flex;
+}
+
+.tag-link {
+  text-decoration: none;
 }

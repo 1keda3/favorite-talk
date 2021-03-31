@@ -8,7 +8,9 @@
               <%= room.title %>
             <% end %>
             <%room.tags.each do |tag| %>
-              #<%=tag.name%>
+              <%= link_to tag_path(tag.id), method: :get, class:"tag-link" do %>
+                #<%=tag.name%>
+              <% end %>
             <%end%>
           </li>
         <% end %>

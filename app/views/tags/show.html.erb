@@ -1,14 +1,29 @@
-<ul class='room-lists'>
-  <% @rooms.each do |room| %>
-    <%= link_to room_messages_path(room.id), method: :get do %>
-      <%room.tags.each do |tag| %>
-        <% if tag.id == @tag.id %>
-          <li class='room-list'>
-            <%= room.title %>
-            #<%=tag.name%>
-          </li>
+<div class="room-search">
+  <div class= "header">
+    <%= render'rooms/header'%>
+  </div>
+
+  <div class="room-index">
+    <div class="message-side-bar">
+      <%= render"messages/side_bar"%>
+    </div>
+    <ul class='tag-room-lists'>
+      <% @rooms.each do |room| %>
+        <%= link_to room_messages_path(room.id), method: :get do %>
+          <%room.tags.each do |tag| %>
+            <% if tag.id == @tag.id %>
+              <li class='tag-room-list'>
+                <%= room.title %>
+                #<%=tag.name%>
+              </li>
+            <% end %>
+          <%end%>
         <% end %>
-      <%end%>
-    <% end %>
-  <% end %>
-</ul>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+
+
+

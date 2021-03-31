@@ -10,10 +10,12 @@
 .message {
   border: 1px solid #808080;
   margin-bottom: 10px;
+  background-color: white;
 }
 
 .messages {
   margin-top: 10px;
+  width: 700px;
 }
 
 .upper-message {
@@ -48,6 +50,9 @@
 
 .chat-room {
   margin: 0 20px;
+  overflow: scroll;
+  height: calc(100vh - 10vh);
+  width: calc(100vw - 200px);
 }
 
 .message-image {
@@ -57,4 +62,8 @@
 .message-name {
   width: 40vw;
   height: 20vh;
+}
+
+.messages-room {
+  background-color: #C0C0C0;
 }
