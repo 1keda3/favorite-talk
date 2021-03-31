@@ -73,6 +73,7 @@ favorite-talk
 
 # URL
 https://favorite-talk.herokuapp.com/
+Herokuでデプロイしているため、Herokuの仕様により本番環境にアクセス頂いた際に画像リンクが切れている可能性がございます。
 
 # テスト用アカウント
 email: aa@a
@@ -146,7 +147,7 @@ password: aaa111
 →チャット画面に表示される
 ![f2c66cee61c386ac8a6dae5e287bd8e7](https://user-images.githubusercontent.com/78196968/112568186-69821900-8e25-11eb-9b0b-e7dc7d7a574b.gif)
 
-## ユーザー情報
+## ユーザー情報管理機能
 ユーザー名をクリック
 →ユーザー情報が表示
 自分の情報なら編集ボタンが表示される
