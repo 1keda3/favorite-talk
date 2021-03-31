@@ -11,7 +11,7 @@
           <h2 class="page-heading">
             <%= "#{@user.nickname}さんの情報"%>
           </h2>
-          <% if current_user.id == @user.id%>
+          <% if user_signed_in? && current_user.id == @user.id%>
             <%= link_to '編集', edit_user_registration_path, class:"user-edit-link" %>
           <% end %>
         </div>
