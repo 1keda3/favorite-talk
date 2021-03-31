@@ -5,4 +5,12 @@ class Room < ApplicationRecord
 
   validates :title, presence: true
 
+  def self.search(search)
+    if search != ""
+      Room.where('title LIKE(?)', "%#{search}%")
+    else
+      Room.all
+    end
+  end
+
 end

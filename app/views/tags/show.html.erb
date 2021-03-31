@@ -1,0 +1,41 @@
+<%= "こんにちは" %>
+<%= tag.id %>
+<%= "こんにちは" %>
+
+<% if tag.id.present? %>
+  <%= 'あるよ' %>
+  <%= tag.id %>
+<% else %>
+  <%= 'ないね' %>
+<% end %>
+
+<% if @tag.id.present? %>
+  <%= tag.id %>
+  <%= 'うける'%>
+<% else %>
+  <%= 'ないね' %>
+<% end %>
+
+
+<ul class='room-lists'>
+  <% @rooms.each do |room| %>
+    <li class='room-list'>
+      <%= link_to room_messages_path(room.id), method: :get do %>
+        <%room.tags.each do |tag| %>
+          <% if tag.id == 10%>
+            <%= room.title %>
+            #<%=tag.name%>
+          <% end %>
+        <%end%>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+
+
+<% if @tag.id.present? %>
+  <%= tag.id %>
+  <%= 'うける'%>
+<% else %>
+  <%= 'ないね' %>
+<% end %>
