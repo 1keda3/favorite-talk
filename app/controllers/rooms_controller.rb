@@ -21,10 +21,9 @@ class RoomsController < ApplicationController
   end
 
   def search
-    return nil if params[:keyword] == ""
-    tag = Tag.where(['name LIKE ?', "%#{params[:keyword]}%"] )
-    render json:{ keyword: tag }
+    @rooms = Room.search(params[:keyword])
   end
+
 
   private
   

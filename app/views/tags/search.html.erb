@@ -1,0 +1,5 @@
+<div class="contents row">
+  <% @tags.each do |tag| %>
+    <%= render partial: "tag", locals: { tag: tag } %>
+  <% end %>
+</div>
