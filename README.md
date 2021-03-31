@@ -157,10 +157,15 @@ password: aaa111
 ## 検索機能
 タグをクリック
 →タグと紐付いているルーム一覽が表示される
+![a0486f226e512b99c365b7bcde44b70c](https://user-images.githubusercontent.com/78196968/113142551-fa158a80-9265-11eb-92cd-36b231c6627d.gif)
+
 タグ検索欄に入力
 →入力された文字を名前に含むタグが表示される
+![cbc15fd81b10f84967f8ab900d229e5c](https://user-images.githubusercontent.com/78196968/113142594-06014c80-9266-11eb-8fed-16d5f3c67fdf.gif)
+
 ルーム検索欄に入力
 →入力された文字をタイトルに含むルームが表示される
+![eb0d7f7bef0f57606b2cf4ae3d8f3dc5](https://user-images.githubusercontent.com/78196968/113142638-15809580-9266-11eb-8f88-02a49c9d4af1.gif)
 
 
 # 実装予定の機能
