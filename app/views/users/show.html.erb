@@ -7,12 +7,14 @@
   <div class="user-content">
     <div class="inner">
       <div class="user__wrapper">
-        <h2 class="page-heading">
-          <%= "#{@user.nickname}さんの情報"%>
-        </h2>
-        <% if current_user.id == @user.id%>
-          <%= link_to '編集', edit_user_registration_path %>
-        <% end %>
+        <div class="user-information">
+          <h2 class="page-heading">
+            <%= "#{@user.nickname}さんの情報"%>
+          </h2>
+          <% if current_user.id == @user.id%>
+            <%= link_to '編集', edit_user_registration_path, class:"user-edit-link" %>
+          <% end %>
+        </div>
         <table class="table">
           <tbody>
             <tr>
