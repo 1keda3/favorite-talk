@@ -170,10 +170,6 @@ password: aaa111
 ![eb0d7f7bef0f57606b2cf4ae3d8f3dc5](https://user-images.githubusercontent.com/78196968/113142638-15809580-9266-11eb-8f88-02a49c9d4af1.gif)
 
 
-# 実装予定の機能
-タグをあとから付けることができる機能を実装予定です。
-
-
 # データベース設計
 <img width="640" alt="FavoriteTalkER" src="https://user-images.githubusercontent.com/78196968/112747605-6b003c80-8ff1-11eb-86f7-4f869da8722c.png">
 
